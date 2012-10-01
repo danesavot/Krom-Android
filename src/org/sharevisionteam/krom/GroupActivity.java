@@ -1,20 +1,21 @@
 package org.sharevisionteam.krom;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.Menu;
 
-public class GroupActivity extends Activity {
+import android.os.Bundle;
+
+public class GroupActivity extends SherlockActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.group);
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.group, menu);
-        return true;
+    	getSupportMenuInflater().inflate(R.menu.group, menu);
+    	return true;
     }
+
 }
